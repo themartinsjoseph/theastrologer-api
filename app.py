@@ -9,19 +9,19 @@ def get_home():
     return jsonify({
             'author': 'Sandip Bhagat',
             'author_url': 'http://sandipbgt.github.io',
-            'base_url': 'https://theastrologer-api.herokuapp.com',
+            'base_url': 'https://thawing-hollows-25987.herokuapp.com',
             'project_name': 'theastrologer-api',
             'project_url': 'https://github.com/sandipbgt/theastrologer-api',
-            'api': 'https://theastrologer-api.herokuapp.com/api'
+            'api': 'https://thawing-hollows-25987.herokuapp.com/api'
         })
 
 # API Index
 @app.route('/api', methods=['GET'])
 def get_api_home():
     return jsonify({
-            'yesterday': 'https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/yesterday',
-            'today': 'https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/today',
-            'tomorrow': 'https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/tomorrow'
+            'yesterday': 'https://thawing-hollows-25987.herokuapp.com/api/horoscope/{sunsign}/yesterday',
+            'today': 'https://thawing-hollows-25987.herokuapp.com/api/horoscope/{sunsign}/today',
+            'tomorrow': 'https://thawing-hollows-25987.herokuapp.com/api/horoscope/{sunsign}/tomorrow'
         })
 
 # Yesterday's Horoscope
